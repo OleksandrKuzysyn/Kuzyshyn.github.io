@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Contact us</h1>
+            <p>Need an experienced and skilled hand with custom IT projects? Fill out the form to get a free consultation.</p>
+            <form action="#" method="post">
+                <label for="company">Your Company Name</label>
+                <input type="text" placeholder="Your Company Name" id="company" name="company" required>
+                <small>Please, enter your company name</small>
+
+                <label for="business">Nature of Business</label>
+                <input type="text" placeholder="Nature of Business" id="business" name="business" required>
+                <small>Please, enter nature of your business</small>
+
+                <div class="address-section">
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" placeholder="Address" id="address" name="address" required>
+                        <small>Please, enter your address</small>
+                    </div>
+                    <div>
+                        <label for="postcode">Postcode</label>
+                        <input type="text" placeholder="Postcode" id="postcode" name="postcode" required>
+                        <small>Please, enter your postcode</small>
+                    </div>
+                </div>
+
+                <label for="contact-name">Contact name</label>
+                <input type="text" placeholder="Contact name" id="contact-name" name="contact-name" required>
+                <small>Please, enter your contact name</small>
+
+                <label for="phone">Contact Phone</label>
+                <input type="tel" placeholder="Contact Phone" id="phone" name="phone" required>
+                <small>Please, enter your contact phone</small>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" name="email" required>
+                <small>Please, enter valid email address</small>
+
+                <label for="linkedin">LinkedIn</label>
+                <input type="text" placeholder="LinkedIn" id="linkedin" name="linkedin">
+                <small>Please, enter your LinkedIn</small>
+
+                <label for="idea">Let's talk about your idea</label>
+                <textarea id="idea" placeholder="Let's talk about your idea" name="idea" rows="4"></textarea>
+
+                <label for="file-upload" class="file-label">Upload Additional file</label>
+                <input type="file" id="file-upload" name="file-upload">
+                <small>Attach file. File size of your documents should not exceed 10MB</small>
+
+                <div class="nda-checkbox">
+                    <input type="checkbox" id="nda" name="nda">
+                    <label for="nda">I want to protect my data by signing an NDA</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <h2>Offices</h2>
+            <p><strong>United States</strong><br>500 5th Avenue Suite 400, NY 10110</p>
+            <p><strong>United Kingdom</strong><br>High St, Bromley BR1 1DN</p>
+            <p><strong>France</strong><br>80 avenue des Terroirs de France, Paris</p>
+
+            <h3>For Quick Inquiries</h3>
+            <p>🇬🇧 +44 7777777777</p>
+            <p>🇺🇸 +1 3333333330</p>
+
+            <h3>Would you like to join our newsletter?</h3>
+            <form action="#" method="post" class="newsletter">
+                <input type="email" placeholder="Email" required>
+                <button type="submit">&#10003;</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
