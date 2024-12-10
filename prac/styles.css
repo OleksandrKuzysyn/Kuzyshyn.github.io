@@ -1,0 +1,542 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page-header-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 30px 10px;
+  background: url(images/home_header.webp);
+  background-size: 100% auto;
+  height: calc(100vw / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-header-section h1 {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+}
+
+.top-menu {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+h2 {
+  margin: 0;
+}
+
+.burger-menu {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  justify-self: end;
+  margin-right: 2%;
+}
+
+input[type="checkbox"]:checked ~ .close-menu {
+  display: block;
+}
+
+.close-menu {
+  position: fixed;
+  top: 100px; 
+  right: 10px;
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.burger-menu:focus {
+  outline: none;
+}
+
+.menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+  top: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+
+
+.body-section {
+  padding: 15px;
+}
+
+.text-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-image img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+
+
+.Maintenance-section {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background: url(images/Maintenance_and_Insurance.webp);
+  background-size: 100% auto;
+  margin: 20px 0;
+  height: calc(100vw / 2.3);
+}
+
+.Maintenance {
+  text-align: center;
+  max-width: 100%;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+
+
+
+.Free-of-charge-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.Free-of-charge {
+  text-align: center;
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+
+
+.how-it-works {
+  text-align: left;
+  margin-left: 5%;
+}
+
+.how-it-works ul {
+  list-style: none;
+  padding: 0;
+}
+
+.how-it-works li {
+  margin: 8px 0;
+}
+
+
+
+.bikes-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2%;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.bike-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bike-image {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bike-info {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  padding: 15px;
+}
+
+.bike-info h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.bike-info h3 span {
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+}
+
+.bike-info p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.bike-navigation {
+  width: 25%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.color-options {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5px;
+}
+
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.color.active {
+  border: 2px solid black;
+}
+
+.color:nth-child(2) {
+  background-color: #333;
+}
+
+.color:nth-child(3) {
+  background-color: #e6e6d8;
+}
+
+.color:nth-child(4) {
+  background-color: #d1c4b2;
+}
+
+
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 30px 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form select {
+  width: 104.5%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+
+
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.faq-header {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer-banner {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-banner p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-button {
+  background-color: white;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.footer-content {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column.join form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-column.join input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer-column.join button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.footer-column.join label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.footer-column.join .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-column.join .social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+@media (min-width: 769px) {
+  .home-page-header-section {
+    padding: 50px 20px;
+  }
+
+  .home-page-header-section h1 {
+    font-size: 2.5em;
+  }
+
+  .text-image {
+    flex-direction: row;
+  }
+
+  .text-image img {
+    max-width: 35%;
+  }
+
+  .Maintenance-section,
+  .Free-of-charge-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .bike-image {
+    height: 450px;
+  }
+
+  .contact-form {
+    padding: 50px 20px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+}
+
+.contact-form form {
+    max-width: 500px;
+}
+
+  .faq {
+    padding: 40px 20px;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .home-page-header-section h1 {
+    font-size: 3em;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin: 0 20px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  .text-image img {
+    max-width: 30%;
+  }
+
+  .Maintenance-section,
+  .Free-of-charge-section {
+    justify-content: space-evenly;
+  }
+
+  .bike-image {
+    height: 450px;
+  }
+}
