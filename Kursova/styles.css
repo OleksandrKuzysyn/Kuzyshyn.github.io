@@ -710,11 +710,11 @@ body {
 
 
 @media (min-width: 769px) {
-  .home-page-header-section {
+  .header-section {
     padding: 50px 20px;
   }
 
-  .home-page-header-section h1 {
+  .header-section h1 {
     font-size: 2.5em;
   }
 
@@ -825,7 +825,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .home-page-header-section h1 {
+  .header-section h1 {
     font-size: 3em;
   }
 
@@ -853,6 +853,11 @@ body {
   .text-box {
     grid-column: 2 / 3;
   }
+
+  .explore-our-bikes-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
   .explore-our-bikes-card-container {
     grid-template-columns: repeat(3, 1fr);
